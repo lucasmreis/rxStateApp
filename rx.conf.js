@@ -18,6 +18,7 @@ module.exports = function(config) {
       'node_modules/angular/angular.js',
       'node_modules/angular-mocks/angular-mocks.js',
       'node_modules/ramda/dist/ramda.js',
+      'node_modules/rx/dist/rx.all.js',
       'js/**/*.js'
     ],
 

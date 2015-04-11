@@ -3,7 +3,7 @@
   <head>
     <title>Simple State App</title>
   </head>
-  <body ng-app="simpleStateApp">
+  <body ng-app="rxStateApp">
     <h2>Simple State Illustration</h2>
     <h3><a href="https://github.com/Yomguithereal/baobab">Baobab</a> version</h3>
 
@@ -25,7 +25,7 @@
 
     <hr>
 
-    <div ng-controller="FooCtrl as c">
+    <!--div ng-controller="FooCtrl as c">
       <h3>"Foo" form</h3>
       <p>
         By clicking "Add Foo", one adds a string to the foos array.
@@ -38,7 +38,7 @@
 
     <hr>
 
-    <!--div ng-controller="BarCtrl as c">
+    <div ng-controller="BarCtrl as c">
       <h3>First "Bar" form</h3>
       <p>
         To be able to add a string to bars, add the string 'requiredFoo' to foos.
@@ -92,7 +92,10 @@
 
     <script src="js/app.js"></script>
     <script src="js/services/appState.js"></script>
-    <script src="js/services/storageService.js"></script>
+    <script src="js/services/appStateUtil.js"></script>
+
+    <script src="js/services/foosActions.js"></script>
+    <script src="js/services/barsActions.js"></script>
 
     <script src="js/controllers/readOnlyController.js"></script>
     <script src="js/controllers/fooController.js"></script>
