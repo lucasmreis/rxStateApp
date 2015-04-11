@@ -1,23 +1,23 @@
-angular.module('simpleStateApp').controller('FooCtrl', function(AppState) {
-  var foosCursor = AppState.select('foos');
+angular.module('rxStateApp').controller('FooCtrl', function(AppState) {
+//   var foosCursor = AppState.select('foos');
 
-  var state = { 
-    foos: foosCursor.get()
-  };
+//   var state = {
+//     foos: foosCursor.get()
+//   };
 
-  var form = {
-    newFoo: ''
-  };
+//   var form = {
+//     newFoo: ''
+//   };
 
-  foosCursor.on('update', 
-    function() { state.foos = foosCursor.get() });
+//   foosCursor.on('update',
+//     function() { state.foos = foosCursor.get() });
 
- var addFoo = function(form) {
-    foosCursor.push(form.newFoo);
-  };
+//  var addFoo = function(form) {
+//     foosCursor.push(form.newFoo);
+//   };
 
-  this.state = state;
-  this.form = form;
+//   this.state = state;
+//   this.form = form;
 
-  this.addFoo = addFoo;
+//   this.addFoo = addFoo;
 });
